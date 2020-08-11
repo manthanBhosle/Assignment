@@ -1,0 +1,50 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/57/ba/7e/57ba7e0d8e1364697c8ceb79ac359a33.jpg);
+    background-size:cover;
+
+}
+.navbar {
+    background-color: #19388A;
+    cursor: pointer;
+}
+
+
+.navbar-brand {
+    color: #e0e0e0;
+    text-shadow: black 1px 1px 0;
+
+}
+
+.navbar-brand:hover {
+    color: gray;
+}
+
+.btn{
+    padding: 3px 20px;
+    color: white;
+    background-color: #19388A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover {
+    background-color: #4F91CD;
+}
+
+#login-form {
+    display: block;
+    background: linear-gradient(to bottom, #4F91CD, #19388A);
+    padding: 20px 20px 20px;
+    margin: 50px 50px 50px;
+    border-radius: 5px;
+    float: right;
+}
+
+h2, p, b{
+    margin: 50px 50px 50px;
+    color: #e0e0e0;
+    text-shadow: black 1px 1px 0;
+  
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/teams_style.css">
+    <script type="text/javascript" src="js/team.js"></script>
+    <title>Teams</title>
+</head>
+<body>
+    <header>IPL 2020
+        <nav>
+          <ul class="nav_links">
+            <li><a href="home.html">Home</a></li>
+          </ul>
+        </nav>
+        <a href="login.html"><button>Login | Signup</button></a>
+      
+    </header>
+
+    <div class="team-page">
+      <p id="demo"></p>
+      <script type="text/javascript">
+        document.getElementById("demo").innerHTML = getTeams();
+      </script>
+      <div class = "form" >
+        <form >
+          <input name = "team" type="text" placeholder="Team Name">
+          <input name = "team" type="text" placeholder="City">
+          <input name = "team" type="text" placeholder="Coach">
+          <input name = "team" type="text" placeholder="Home">
+            
+          <button type="button" onclick="document.getElementById('demo').innerHTML = addTeam()">Add</button>
+        </form>
+
+        <form >
+          <input name = "delRec" type="text" placeholder="Name of team to delete">
+          <button type="button" onclick="document.getElementById('demo').innerHTML = deleteTeam()">Delete</button>
+        </form>
+      </div>  
+      
+    </div>
+</body>
+</html>

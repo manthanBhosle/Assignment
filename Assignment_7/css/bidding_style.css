@@ -1,0 +1,97 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/57/ba/7e/57ba7e0d8e1364697c8ceb79ac359a33.jpg);
+    background-size:cover;
+
+}
+.navbar{
+    background-color: #19388A;
+    cursor: pointer;
+}
+
+.nav-link {
+
+    color: #e0e0e0;
+    
+    text-shadow: black 1px 1px 0;
+}
+
+
+
+.nav-link:hover {
+
+    color: gray;
+}
+
+.navbar-brand {
+    color: #e0e0e0;
+    text-shadow: black 1px 1px 0;
+
+}
+
+
+.navbar-brand:hover {
+    color: gray;
+}
+
+
+.btn{
+    padding: 3px 20px;
+    color: white;
+    background-color: #19388A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+.btn:hover {
+    background-color: #4F91CD;
+}
+
+.table {
+    border-radius: 25px;
+    margin: 20px 20px 20px;
+    width: fit-content;
+    color: #e0e0e0;
+
+    text-shadow: black 1px 1px 0;
+
+}
+
+
+thead {
+    background-color: #19388A;
+}
+
+tbody{
+    background-image: linear-gradient(to right, #2f488d , #98AFC7);
+  
+}
+
+
+td{
+    color: #e0e0e0;
+    
+    text-shadow: black 1px 1px 0;
+}
+td:hover {
+    color: #e0e0e0;
+    
+    text-shadow: black 1px 1px 0;
+}
+
+.bid {
+    display: inline-flex;
+}
+
+.op {
+    display: inline-block;
+}
+
+h4 {
+    color: #e0e0e0;
+    margin-top: 20px;
+    margin-left: 20px;
+    text-shadow: black 1px 1px 0;
+}

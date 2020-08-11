@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+<html>
+<head>
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/login_style.css">
+  <script type="text/javascript" src="js/login.js"></script>
+  
+</head>
+
+<body >
+  <header><img src = "img/IPL.png" width="60px" height="60px">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="home.html">Home</a></li>
+      </ul>
+    </nav>
+    <a href="login.html"><button>Login | Signup</button></a>
+  </header>
+	
+
+<div class="login-page">
+  
+  <div class="form">
+
+    <form>
+      <input name = "user" type="text" placeholder="Username">
+      <input name = "user" type="text" placeholder="Password">
+      <button type="button" onclick="document.getElementById('demo').innerHTML = getLoggedIn(document.getElementsByName('user')[0].value, document.getElementsByName('user')[1].value)">LOGIN</button>
+      
+    </form>
+
+    <form class="login-form">
+      <button type="button" onclick="window.location.href='signup.html'">SIGN UP</button>
+    </form>
+    <p id="demo"></p>
+  </div>
+</div>
+
+</body>
+</html>

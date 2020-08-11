@@ -1,0 +1,126 @@
+
+
+.form {
+  
+  margin : 20px 10px 0;
+  display : flex;
+}
+form {
+  margin: auto;
+}
+.form input {
+  font-family: FontAwesome, "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  display: block;
+  
+}
+.form button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: .1em;
+  outline: 0;
+  background: #19388A;
+  width: 100%;
+  border: 0;
+  margin: 0px 0px 10px;
+  padding: 15px;
+  color: #FFFFFF;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+
+
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #4F91CD;
+}
+
+li , a, button {
+    color: #FFFFFF ;
+}
+
+
+header {
+    color: #FFFFFF ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    background-color:  #19388A ;
+    
+}
+.nav_links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #19388A;
+  }
+
+.nav_links li {
+  float: left;
+}
+
+.nav_links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.nav_links li a:hover {
+  background-color: #4F91CD;
+
+}
+
+button{
+  padding: 9px 25px;
+  background-color: #19388A;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: #4F91CD;
+}
+caption{
+  color: #FFFFFF;
+  margin: 0 0 5px;
+  padding: 16px;
+  background-color: #19388A;
+}
+
+
+table, th, td { 
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 15px;
+}
+th {
+  text-align: left;
+}
+#t01 tr:nth-child(even) {
+  background-color: #eee;
+}
+#t01 tr:nth-child(odd) {
+  background-color: #fff;
+}
+#t01 th {
+  color: white;
+  background-color: #4F91CD;
+}
+
