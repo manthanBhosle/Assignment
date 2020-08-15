@@ -1,1 +1,71 @@
-<p>home works!</p>
+<div class="row">
+    <div class="col col-sm">
+        <p><strong>Angular Basics - Data binding</strong></p>
+        <img src="../../assets/img/databinding.png" class="img-fluid" alt="Angular data binding">
+        <p><strong>Interpolation <i>{{<i>..</i>}}</i></strong></p>
+        {{message}}
+        <br>
+        {{"5 * 9 = "+(5 * 9)}}
+        <br>
+        <p><strong>Property and Event Binding</strong></p>
+        <img [src]="imgSrc" class="img-fluid" alt="off">
+        <br>
+        <button (click)="toggleBlub()" class="btn btn-primary">On/Off</button>
+        <br>
+        <p><strong>Two-way Binding</strong></p>
+        <input class="form-control" [(ngModel)]="username">
+        <p>Username: {{username}}</p>
+    </div>
+    <div class="col col-sm">
+        <p><strong>Angular Basics - Directives</strong></p>
+        <div *ngIf="servers.length > 0; then showservers else noservers"></div> 
+
+        <ng-template #showservers>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>IP Address</th>
+                        <th>Status</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let server of servers; index as count">
+                        <td>{{count + 1}}</td>
+                        <td>{{server.ip}}</td>
+                        <td>
+                            <button class="btn btn-sm mr-1" 
+                            [ngClass]="{
+                                'btn-danger':!server.status,
+                                'btn-success':server.status
+                            }"
+                        
+                            (click)="changeStatus(server)">
+                            
+                            {{server.status ? "ON":"OFF"}}
+
+                            </button>
+
+                        </td>
+                        <td>
+                            <button class="btn btn-sm btn-info"
+                            (click)="removeServer(server)"
+                            [disabled]="server.status" >
+                            Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </ng-template>
+        <ng-template #noservers>
+            <p><strong>There are no server to show...</strong></p>
+        </ng-template>
+
+    </div>
+
+</div>
+
+

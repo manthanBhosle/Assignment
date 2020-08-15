@@ -1,0 +1,30 @@
+<div class="row ml-1 mr-1 mt-2" >
+    <div class="col-s-6">
+        <strong>PL-2020 Team Details</strong>
+        <table class="table table-hover" *ngIf="teams" >
+            <tr>
+                <th>#</th>
+                <th>Team</th>
+                <th>Coach</th>
+                <th>City</th>
+                <th>Label</th>
+                
+            </tr>
+            <tr *ngFor="let team of teams;index as i">
+                <td>{{i+1}}</td>
+                <td>{{team.team}}</td>
+                <td>{{team.coach}}</td>
+                <td>{{team.city}}</td>
+                <td>{{team.label}}</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <div class="col-s-6">
+        <div *ngIf="pieChart.dataTable">
+            <google-chart [data]="pieChart"></google-chart>
+        </div>
+
+    </div>
+</div>
