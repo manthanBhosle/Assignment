@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <strong *ngIf="allplayers.length > 0"> All Players </strong>
+            <table class="table table-sm table-hover" *ngIf="allplayers.length > 0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Team</th>
+                        <th>Role</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let player of allplayers">
+                        <td>{{player.name}}</td>
+                        <td>{{player.label}}</td>
+                        <td>{{player.role}}</td>
+                        <td>{{player.price | inr}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col">
+            <div *ngFor="let role of maxpaidplayers">
+                <strong > Maximum Paid {{role.role}}s </strong>
+                <table class="table table-sm table-hover" >
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Team</th>
+                            <th>Role</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let player of role.players">
+                            <td>{{player.name}}</td>
+                            <td>{{player.label}}</td>
+                            <td>{{player.role}}</td>
+                            <td>{{player.price | inr}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <hr>
+            </div>
+        </div>
+    </div>  
+</div>

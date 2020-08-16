@@ -1,0 +1,36 @@
+<div class="container">  
+    <div class="row">
+        <div class="col">
+            <strong  *ngIf="teams.length > 0">IPL-2020 Team Details</strong>
+            <table class="table table-sm table-hover" *ngIf="teams.length > 0">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Team</th>
+                        <th>Coach</th>
+                        <th>City</th>
+                        <th>Label</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let team of teams;index as i">
+                        <td>{{i+1}}</td>
+                        <td>{{team.team}}</td>
+                        <td>{{team.coach}}</td>
+                        <td>{{team.city}}</td>
+                        <td>{{team.label}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>   
+        <div class="col">
+            <div *ngIf="pieChart.dataTable">
+                <google-chart [data]="pieChart" (chartSelect)="select($event)"></google-chart>
+            </div>
+            <hr>
+            <div *ngIf="pieChart2.dataTable">
+                <google-chart [data]="pieChart2"></google-chart>
+            </div>
+        </div>
+    </div>
+</div>  
