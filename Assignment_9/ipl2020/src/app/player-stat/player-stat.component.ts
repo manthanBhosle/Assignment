@@ -60,7 +60,17 @@ export class PlayerStatComponent implements OnInit {
       chartType: 'PieChart',
       dataTable:chartData,
       //firstRowIsData: true,
-      options: {'title': `${team}`,'width':400, 'height':400},
+      options: {
+        'backgroundColor': 'transparent',
+        'title': `${team}`,
+        'titleTextStyle': {
+          'color': '#e0e0e0'
+        },
+        'legend': {
+          'textStyle': {'color': '#e0e0e0'}
+        },
+        'width':400, 'height':400
+      },
     };
   }
 

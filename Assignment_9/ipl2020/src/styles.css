@@ -1,1 +1,7 @@
-@import '~bootstrap/dist/css/bootstrap.min.css'
+@import '~bootstrap/dist/css/bootstrap.min.css';
+body {
+    background-image: url(https://i.pinimg.com/originals/57/ba/7e/57ba7e0d8e1364697c8ceb79ac359a33.jpg);
+    background-size:cover;
+
+}
+/* #19388A, #4F91CD */

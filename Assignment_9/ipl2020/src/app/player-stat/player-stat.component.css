@@ -1,8 +1,30 @@
-.card {
-    transition:transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+.card { 
+    background: linear-gradient(#19388A, #4F91CD );
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-body {
+    color: white;
 }
 
 .card:hover {
+    background: linear-gradient (#4F91CD, #19388A);
     transform:scale(1.05);
 }
 
+thead {
+    color: white;
+    background: linear-gradient(#19388A, #4F91CD ); 
+}
+
+tbody {
+    background: linear-gradient(to right, #4F91CD, #a5becf)
+}
+
+strong {
+    color: white;
+    text-shadow: black 1px;
+}
+
+
+/* #19388A, #4F91CD */

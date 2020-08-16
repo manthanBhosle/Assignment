@@ -1,0 +1,13 @@
+thead {
+    color: white;
+    background: linear-gradient(#19388A, #4F91CD ); 
+}
+
+tbody {
+    background: linear-gradient(to right, #4F91CD, #a5becf)
+}
+
+strong {
+    color: white;
+    text-shadow: black 1px;
+}

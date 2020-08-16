@@ -56,7 +56,35 @@ drawChart(chartData){
     chartType: 'ColumnChart',
     dataTable:chartData,
     //firstRowIsData: true,
-    options: {'title': 'Amount Spent by Teams','width':400, 'height':200},
+    options: {
+      'backgroundColor': 'transparent',
+      'title': 'Amount Spent by Teams',
+      'titleTextStyle': {
+				'color': '#e0e0e0'
+      },
+      'hAxis':{
+				'textStyle' :{
+					'color': '#e0e0e0'
+				},
+			
+				'titleTextStyle': {
+					'color': '#e0e0e0'
+				}
+			},
+			'vAxis':{
+				'textStyle' :{
+					'color': '#e0e0e0'
+				},
+		
+				'titleTextStyle': {
+					'color': '#e0e0e0'
+				}
+      },
+      'legend': {
+				'textStyle': {'color': '#e0e0e0'}
+			},
+      'width':400, 'height':200
+    },
   };
 }
 
@@ -65,7 +93,17 @@ drawChart2(chartData, team:TeamAmount){
       chartType: 'PieChart',
       dataTable:chartData,
       //firstRowIsData: true,
-      options: {'title': `${team.teamName}`,'width':400, 'height':250},
+      options: {
+        'backgroundColor': 'transparent',
+        'title': `${team.teamName}`,
+        'titleTextStyle': {
+          'color': '#e0e0e0'
+        },
+        'legend': {
+          'textStyle': {'color': '#e0e0e0'}
+        },
+        'width':400, 'height':250
+      },
     };
 }
 
