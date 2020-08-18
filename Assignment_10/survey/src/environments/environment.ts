@@ -3,9 +3,7 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false,
-  apiUrl: 'https://indipl2020.herokuapp.com',
-  baseUrl: 'https://ipl2020-stat.herokuapp.com/ipl2020/team/'
+  production: false
 };
 
 /*

@@ -4,4 +4,9 @@ body {
     background-size:cover;
 
 }
+a { cursor: pointer }
+
+.navbar {
+    background: linear-gradient( #4F91CD, #19388A ); 
+}
 /* #19388A, #4F91CD */
