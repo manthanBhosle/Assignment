@@ -1,43 +1,81 @@
-
-<div class="container">  
-  <form >  
-    <div class="text-center padding"><h2> Survey</h2></div>  
-      <div class="form-group row">  
-                 
-        <div class="form-row ">  
-          <div class="form-group col-md-6">  
-            <label for="Name" class="form-label col-lg-12">Name</label>  
-            <input type="text" class="form-control col-lg-12" id="Name"  placeholder="Name" autocomplete>  
-          </div>  
-          <div class="form-group col-md-6"></div>
-          <div class="form-group col-md-6">  
-            <label for="Number" class="form-label col-lg-12">Contact Number</label>  
-            <input type="number" class="form-control col-lg-12" id="Number" placeholder="Phone Number">  
-          </div>  
-          <div class="form-group col-md-6">  
-            <label for="Email" class="form-label col-lg-12">Email</label>  
-            <input type="text" class="form-control col-lg-12" id="email" placeholder="Email@example.com">  
-          </div>  
-          <div class="form-group col-md-6">  
-            <label for="Org" class="form-label col-lg-12">Organisation</label>  
-            <input type="text" class="form-control col-lg-12" id="org" placeholder="Organisation Name">  
-          </div>  
-    
-          <div class="form-group col-md-6">  
-            <label for="Respon" class="form-label col-lg-12">Responsibility</label>  
-            <input type="text" class="form-control col-lg-12" id="Respon" placeholder="Responsibility">  
-          </div>
-          
-     
-          <div class="form-group col-md-6">  
-            <button type="submit" class=" btn btn-primary padding-top">Next</button>   
-       
-          </div>  
+<div class="container-fluid mb-5">
+    <h1>Karnataka Survey</h1>
+    <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" novalidate>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Name</label>
+                <input type="text" required #name="ngModel" class="form-control" [class.is-invalid]='name.invalid && name.touched' name="userName" [ngModel]>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Phone</label>
+                <input type="tel" class="form-control" name="phone" [ngModel]>
+            </div>
         </div>
-      </div>
-    </form>
-</div>
+        
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" [ngModel]>
+        </div>
 
-<div class="container">
-  <router-outlet></router-outlet>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label>Organisation</label>
+                <input type="text" class="form-control" name="org" [ngModel]>
+            </div>
+            <div class="form-group col-md-6">
+                <label>Responsibility</label>
+                <input type="text" class="form-control" name="res" [ngModel]>
+            </div>
+        </div>
+
+    
+        <ul>
+            <li class="mb-3" *ngFor="let topic of survey" ngModelGroup="{{topic.topicId}}">
+                {{topic.topicName}})<br><br>
+                <table class="table">
+                <thead>
+                    <th >Description</th>
+                    
+                    <th *ngFor="let que of topic.data[0].questions">{{que.question}}</th>
+
+                    <th>Suggestions for implementation in Karnataka</th>
+                        
+                </thead>
+                <tbody>
+                <tr *ngFor="let sec of topic.data" ngModelGroup="{{sec.ref}}">
+                    
+                        <td>
+                            
+                            {{sec.ref}} {{sec.desc}}
+                        
+                        </td>
+                        <td  *ngFor="let que of sec.questions" ngModelGroup="{{que.question}}">
+                            
+                                <div class="form-check" *ngFor="let opt of que.options">
+                                    <input class="form-check-input" type="checkbox" #name="ngModel" name="{{opt}}" [ngModel]="false" >
+                                    <label class="form-check-label"  >
+                                        {{opt}}
+                                        <div *ngIf="opt == 'Other'">
+                                            <input name="otherAns" [disabled]="!name.value" class="form-control" type="text" [ngModel]>
+                                        </div>
+                                    </label>
+                                </div>
+                        </td>
+
+                        <td>
+                            <input name="suggested" class="form-control" type="text" [ngModel]>
+                        </td>
+                   
+                </tr>
+                </tbody>
+                </table>    
+            </li>
+        </ul>
+
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+
+        <hr />
+        {{userForm.value | json}}
+
+    </form>
 </div>

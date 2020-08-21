@@ -1,0 +1,259 @@
+[
+    {
+        "topicId": "1001",
+        "topicName": "Early Childhood Care & Education (ECCE)",
+        "data": [
+            {
+                "ref": "1.3",
+                "desc": "A National Curricular and Pedagogical Framework for Early Childhood Care and Education (NCPFECCE)",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            },
+            {
+                "ref": "1.4",
+                "desc": "Special attention and priority will be given to districts and locations that are particularly socio-economically disadvantaged. Would recruit workers/teachers specially trained in the curriculum and pedagogy of ECCE.",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            },
+            {
+                "ref": "1.7",
+                "desc": "new pre-schools will be opened. anganawadis will be linked with with primary education. Current Anganwadi workers/teachers will be trained in accordance with the curricular/pedagogical framework developed by NCERT. Effort will be made for their Continuous Professional Development (CPD).",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            }
+        ]
+    },
+    {
+        "topicId": "1002",
+        "topicName": "Foundational Literacy and Numeracy (FLN)",
+        "data": [
+            {
+                "ref": "2.5",
+                "desc": "An interim 3-month play-based ‘school preparation module’ for all Grade 1 students, consisting of activities and workbooks consisting components of foundational literacy and numeracy will be prepared",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            },
+            {
+                "ref": "2.6",
+                "desc": "A national repository of high-quality resources on foundational literacy and numeracy will be made available on the Digital Infrastructure for Knowledge Sharing (DIKSHA).",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            },
+            {
+                "ref": "2.7",
+                "desc": "peer-tutoring will be introduced to promote foundational literacy and numeracy.",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            },
+            {
+                "ref": "2.9",
+                "desc": "Children are provided simple but energizing breakfast in addition to midday meals. All school children shall undergo regular health check-ups especially for 100% immunization in schools and health cards will be issued to monitor the same.",
+                "questions": [
+                  {
+                      "question": "Present status in KA",
+                      "options": [
+                          "Satisfactory",
+                          "Needs revamp",
+                          "New program to be impl"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": false
+                  },
+                  {
+                      "question": "Nature of Implications",
+                      "options": [
+                          "Administrative",
+                          "Pedagogical",
+                          "Other"
+                      ],
+                      "textAnswer": "User Text answer",
+                      "allowTextAnswer": true
+                  },
+                  {
+                      "question": "Implementation Timeline",
+                      "options": [
+                          "Short term",
+                          "Long term"
+                      ],
+                      "textAnswer": "user text Answer",
+                      "allowTextAnswer": true
+                  }
+                ]
+            }
+        ]
+    }
+]

@@ -10,7 +10,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   currentUser: User;
-
   constructor(
     private router: Router,
     private authenticationService: AuthenticationService

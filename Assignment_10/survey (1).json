@@ -40,11 +40,6 @@
                             "allowTextAnswer": true
                         }
                     ]
-                },
-                {
-                    "ref": "1.4",
-                    "desc": "Special attention and priority will be given to districts and locations",
-                    "questions": []
                 }
             ]
         }

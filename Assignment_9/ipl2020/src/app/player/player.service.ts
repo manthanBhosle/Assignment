@@ -17,7 +17,7 @@ export class PlayerService {
   }
 
   maxPaidPlayerDetails():Observable<MaxPaidPlayers[]>{
-    return this.http.get<MaxPaidPlayers[]>(`${this.baseUrl}maxamountbyrole`)
+    return this.http.get<MaxPaidPlayers[]>(`${this.baseUrl}maxamoutbyrole`)
   }
 
 }
